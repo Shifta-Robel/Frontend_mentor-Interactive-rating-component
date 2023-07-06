@@ -24,19 +24,21 @@
       </p>
 
       <ul>
-        <li><button class="rating">1</button></li>
-        <li><button class="rating">2</button></li>
-        <li><button class="rating">3</button></li>
-        <li><button class="rating">4</button></li>
-        <li><button class="rating">5</button></li>
+        <li><button class="rating" value="1">1</button></li>
+        <li><button class="rating" value="2">2</button></li>
+        <li><button class="rating" value="3">3</button></li>
+        <li><button class="rating" value="4">4</button></li>
+        <li><button class="rating" value="5">5</button></li>
       </ul>
 
       <button id="submit-btn">Submit</button>
     </div>
 
-    <div class="content-card" id="thank-you-state">
+    <div class="content-card hidden-card" id="thank-you-state">
       <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
-      <p id="">You selected <span></span> out of 5</p>
+      <div id="rating-text-box">
+        <p>You selected <span id="chosen-rating"></span> out of 5</p>
+      </div>
       <h1>Thank you!</h1>
       <p>
         We appreciate you taking the time to give a rating. If you ever need more support, 
@@ -47,5 +49,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Shifta-Robel">Robel Tamirat</a>.
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
