@@ -1,9 +1,14 @@
 body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
   font-family: 'Overpass', serif;
   font-size: 16px;
   background-color: hsl(228, 11%, 9%);
-  position: relative;
-  height: 100vh;
 }
 
 div.content-card{
@@ -11,15 +16,17 @@ div.content-card{
   display: flex;
   flex-direction: column;
 
-  border-radius: 20px;
-  width: 40%;
-  /* height: 35%; */
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  max-width: calc(100vw - 20%);
+  min-width: 318px;
+  width: calc(60% - 30%);
+  height: calc(70% - 17%);
+  padding: 2rem;
+}
+
+.attribution {
+  display: none;
 }
 
 #star-container{
@@ -85,18 +92,21 @@ ul {
   width: 100%;
 }
 
-@media only screen and (min-width: 375px) {
-  div.content-card{
-    width: 80%;
-    aspect-ratio: 4 / 3;
+@media (max-width: 375px) {
+  div.content-card {
+    max-width: 90%;
+    min-width: unset;
+    width: 99%;
+    height: 45%;
+    padding: 5%;
   }
 }
 
-@media only screen and (min-width: 376px) and (max-width: 1440px){
-  div.content-card{
-    width: 25%;
-    /* height: 45%; */
-    /* padding-bottom: 55%; */
-    aspect-ratio: 5 / 7;
-  }
-}
+/* @media only screen and (min-width: 376px) and (max-width: 1440px){ */
+/*   div.content-card{ */
+/*     width: 25%; */
+/*     /* height: 45%; */ */
+/*     /* padding-bottom: 55%; */ */
+/*     aspect-ratio: 5 / 7; */
+/*   } */
+/* } */
