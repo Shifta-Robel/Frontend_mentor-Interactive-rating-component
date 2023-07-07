@@ -1,3 +1,13 @@
+:root {
+  --orange-color: hsl(25, 97%, 53%);
+  --body-bg-color: hsl(228, 11%, 9%);
+  --card-bg-color: hsl(215, 22%, 15%);
+  --buttons-color: hsl(210, 19%, 18%);
+  --white-color: hsl(0, 0%, 100%);
+  --light-gray: hsl(217, 12%, 63%);
+  --rating-text-box-bg-color: hsl(213, 19%, 18%);
+}
+
 body{
   display: flex;
   flex-direction: column;
@@ -8,11 +18,11 @@ body{
 
   font-family: 'Overpass', serif;
   font-size: 16px;
-  background-color: hsl(228, 11%, 9%);
+  background-color: var(--body-bg-color);
 }
 
 div.content-card{
-  background-color: hsl(215, 22%, 15%);
+  background-color: var(--card-bg-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -43,7 +53,7 @@ div.hidden-card{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(210, 19%, 18%);
+  background-color: var(--buttons-color);
 }
 
 #star-container img {
@@ -62,8 +72,8 @@ div.hidden-card{
   justify-content: center;
   align-items: center;
   border: 0px;
-  background-color: hsl(210, 19%, 18%);
-  color: hsl(217, 12%, 63%);
+  background-color: var(--buttons-color);
+  color: var(--light-gray);
   font-weight: 600;
   font-size: 1em;
   max-width: 100%;
@@ -71,24 +81,24 @@ div.hidden-card{
 
 .rating:hover,.rating:active{
   cursor: pointer;
-  background-color: hsl(25, 97%, 53%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--orange-color);
+  color: var(--white-color);
 }
 
 .rating.active{
-  background-color: hsl(217, 12%, 63%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--light-gray);
+  color: var(--white-color);
 }
 
 div.content-card p{
-  color: hsl(217, 12%, 63%);
+  color: var(--light-gray);
   font-size: 0.95em;
   line-height: 1.55;
   margin-top: -0.1rem;
 }
 
 div.content-card h1{
-  color: hsl(0, 0%, 100%);
+  color: var(--white-color);
   font-size: 1.7em;
   font-weight: 800;
   margin-bottom: 0rem;
@@ -99,8 +109,8 @@ div.content-card #submit-btn{
   text-transform: uppercase;
   border-radius: 25px;
   border: 0px;
-  background-color: hsl(25, 97%, 53%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--orange-color);
+  color: var(--white-color);
   font-weight: 700;
   font-size: 0.9em;
   line-height: 1.7;
@@ -110,8 +120,8 @@ div.content-card #submit-btn{
 
 div.content-card #submit-btn:hover, #submit-btn:active{
   cursor: pointer;
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(25, 97%, 53%);
+  background-color: var(--white-color);
+  color: var(--orange-color);
 }
 
 div.content-card#thank-you-state{
@@ -120,13 +130,13 @@ div.content-card#thank-you-state{
 }
 
 #rating-text-box{
-  background-color: hsl(213, 19%, 18%);
+  background-color: var(--rating-text-box-bg-color) ;
   border-radius: 20px;
 }
 
 #rating-text-box p{
   padding: 0.4rem 1.2rem;
-  color: hsl(25, 97%, 53%);
+  color: var(--orange-color);
   margin: 0;
 }
 
