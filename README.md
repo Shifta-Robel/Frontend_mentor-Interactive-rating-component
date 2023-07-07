@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Shifta-Robel/Frontend_mentor-Interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/shifta-robel/Frontend_mentor-Interactive-rating-component)
+- [Live Site URL](https://shifta-robel.github.io/Frontend_mentor-Interactive-rating-component/)
 
 ## My process
 
